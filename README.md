@@ -2,7 +2,7 @@
 
 Esta es la aplicacion para la pagina web de Hospitales 2000
 
-## Instalacion
+## --> Instalacion 
 
 Para correr el proyecto deberan:
 1) Clonar el repositorio
