@@ -1,50 +1,53 @@
-# Welcome to your Expo app 👋
+# Hospitales 2000 - Mobile App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Esta es la aplicacion para la pagina web de Hospitales 2000
 
-## Get started
+## Instalacion
 
-1. Install dependencies
+Para correr el proyecto deberan:
+1) Clonar el repositorio
+```bash
+git clone https://github.com/JulianAlconcher/Hospitales2000-Mobile
+```
+## Instalar un Emulador Android
+Para esto, necesitamos tener instalado Android Studio y configurar las siguientes variables de entorno.
 
-   ```bash
-   npm install
-   ```
+Windows Control Panel > User Accounts > User Accounts (again) > Change my environment variables and click New to create a new ANDROID_HOME user variable. The value of this variable will point to the path to your Android SDK:
 
-2. Start the app
+![image](https://github.com/user-attachments/assets/09dd6385-8757-4a3c-aa85-b2ebe7ad954e)
 
-   ```bash
-    npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+Para chequear, que se hizo correctamente, corroboramos con este comando que ANDROID_HOME se encuentre ahi. (Si tiene una terminal abierta, cierrela y vuelvala a abrir)
 
 ```bash
-npm run reset-project
+Get-ChildItem -Path Env: 
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Luego, editamos Path y agregamos lo siguiente:
+Ir a Windows Control Panel > User Accounts > User Accounts (again) > Change my environment variables > Path > Edit > New and add the path to the platform-tools to the list as shown below:
 
-## Learn more
+![image](https://github.com/user-attachments/assets/16530680-1a91-4153-aeb9-e60d107590b9)
 
-To learn more about developing your project with Expo, look at the following resources:
+Listo, para corroborar que esta correcto, tipeamos el siguiente comando:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+```bash
+adb --version
+```
 
-## Join the community
+### Iniciar emulador en Android Studio
+1) En la pantalla principal de Android Studio, haga clic en Más acciones y luego en Administrador de dispositivos virtuales en el menú desplegable.
 
-Join our community of developers creating universal apps.
+2) Haga clic en el botón Crear dispositivo.
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+3) En Seleccionar hardware, elija el tipo de hardware que desea emular. Recomendamos realizar pruebas con una variedad de dispositivos. (Yo uso el Pixel 3a)
+
+## Para correr el proyecto
+
+Para correr el proyecto, simplemente hacemos:
+
+```bash
+npx expo start
+```
+y Selecciomos la letra "a" para iniciar el emulador Android.
+## License
+
+Comision 1.
