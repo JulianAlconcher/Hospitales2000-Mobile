@@ -14,7 +14,7 @@ Para esto, necesitamos tener instalado Android Studio y configurar las siguiente
 
 Windows Control Panel > User Accounts > User Accounts (again) > Change my environment variables and click New to create a new ANDROID_HOME user variable. The value of this variable will point to the path to your Android SDK:
 
-![image](https://github.com/user-attachments/assets/09dd6385-8757-4a3c-aa85-b2ebe7ad954e)
+![image](https://github.com/user-attachments/assets/c994aa8b-edea-4f25-8ae9-6b375945005c)
 
 Para chequear, que se hizo correctamente, corroboramos con este comando que ANDROID_HOME se encuentre ahi. (Si tiene una terminal abierta, cierrela y vuelvala a abrir)
 
@@ -25,7 +25,8 @@ Get-ChildItem -Path Env:
 Luego, editamos Path y agregamos lo siguiente:
 Ir a Windows Control Panel > User Accounts > User Accounts (again) > Change my environment variables > Path > Edit > New and add the path to the platform-tools to the list as shown below:
 
-![image](https://github.com/user-attachments/assets/16530680-1a91-4153-aeb9-e60d107590b9)
+![image](https://github.com/user-attachments/assets/e623cffe-824d-4f99-b1a4-ce76642930e1)
+
 
 Listo, para corroborar que esta correcto, tipeamos el siguiente comando:
 
